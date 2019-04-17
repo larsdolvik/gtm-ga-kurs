@@ -44,7 +44,7 @@ body {
   margin-top: 24px;
 }
 
-.transparent-logo {
+.transparent-img {
     width: 150px;
 }
 
@@ -53,15 +53,6 @@ body {
   width: 33.33%;
   padding: 10px;
   height: 300px;
-}
-
-.row {
-    margin-top: 50px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 @media screen and (max-width: 500px) {
@@ -74,4 +65,34 @@ body {
   .header-right {
     float: none;
   }
+}
+
+h1 {
+  text-align: center;
+}
+
+.row {
+    margin-top: 50px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buy-button{
+    background-color: rgb(250, 124,58);
+    color: white;
+    float: right;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.content-container {
+  max-width: 1125px;
+  margin: 0 auto;
 }

@@ -1,17 +1,20 @@
-
+// Her ligger en lenke til analyticsjs dokumentasjonen dersom det skulle være ønskelig
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/
 
-function button() {
-    console.log("button click");
-    ga('send', {
-        hitType: 'event',
-        eventCategory: 'Videos',
-        eventAction: 'play',
-        eventLabel: 'Fall Campaign'
-    });
 
-    // Legge opp det forskjellige måtene å legge opp events på?
 
+// Her ligger ett forslag til mulig løsning på en tracking av "Buy"-knappene på forsiden
+
+function goToProduct(product) {
+    // trackProductButtonLink(product)
+    window.location = './products/' + product;
 }
 
-// Click page 
+// function trackProductButtonLink(product) {
+//     ga('send', {
+//         hitType: 'event',
+//         eventCategory: 'Navigation',
+//         eventAction: 'frontpage',
+//         eventLabel: product
+//     });
+// }

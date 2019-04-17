@@ -1,35 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google Tag Manager -->
-    <!-- <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TFDQDC7');</script> -->
-    <!-- End Google Tag Manager -->
+    <!-- Hva har du glemt her? -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="/js/index.js"></script>
+    <script src="product.js"></script>
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="product.css">
     <title>Product1</title>
 </head>
-
-<body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFDQDC7" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
+<body onload="getShoppingCartStatus('product1')">
+    <!-- Og her? -->
     <div class="header">
         <a href="../index.html" class="logo">
-            <img class="transparent-logo" src="../img/bouvet-transparent.png" alt="">
+            <img class="transparent-img" src="../img/bouvet-transparent.png" alt="">
         </a>
         <div class="header-right">
             <a href="../index.html">Home</a>
@@ -41,13 +26,11 @@
     </div>
     <div class="product-container" style="background-color:#ccc;">
         <h2>Product 1</h2>
-        <img class="transparent-logo" src="../img/bike-transparent.png" alt="">
-        <button onclick="button()">Add to shopping cart</button>
-        <form method="get" action="../checkout/checkout.html">
-            <button type="submit">Go to checkout</button>
-        </form>
-        <a href="../checkout/checkout.html">Checkout</a>
+        <p>Now only 4999,-</p>
+        <img class="transparent-img" src="../img/bike-transparent.png" alt="">
+        <button id="ShoppingCartButton" onclick="shoppingCart('product1', 4999)"></button>
+        <p><a href="../checkout/checkout.html">Go to checkout</a></p>
     </div>
-</body>
+</>
 
 </html>

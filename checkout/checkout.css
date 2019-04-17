@@ -1,4 +1,4 @@
-.product-container{
+.checkout-container{
     margin: 0 auto;
     width: 33.33%;
     height: 400px;
@@ -6,10 +6,10 @@
     margin-top: 50px;
 }
 
-#ShoppingCartButton{
+#CompleteTransactionButton{
     background-color: rgb(250, 124,58);
     color: white;
-    float: right;
+    float: left;
     text-align: center;
     padding: 12px;
     margin: 5px;
