@@ -16,7 +16,17 @@ function updateCheckoutList(){
 }
 
 function CompleteTransaction() {
-    alert("Your transaction has been completed")
+    // trackCompleteTransaction();
+    alert("Your transaction has been completed");
     localStorage.clear();
     location.reload();
 }
+
+// function trackCompleteTransaction(product, price) {
+//     ga('send', {
+//         hitType: 'event',
+//         eventCategory: 'Actions',
+//         eventAction: 'CompleteTransaction',
+//         eventLabel: 'Products'
+//     });
+// }
